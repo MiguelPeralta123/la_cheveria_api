@@ -3,7 +3,18 @@ import pagosRoutes from "./routes/pagos.routes.js"
 import enviosRoutes from "./routes/envios.routes.js"
 import provRoutes from "./routes/prov.routes.js"
 
+// Configuracion cors
+import cors from 'cors';
+
+import { con } from './config.js';
+
+// Esto iba despues de terminado el cors
 const app = express();
+
+app.use(cors(
+  con.application.cors.server
+));
+// Aquí termina
 
 app.use(express.json())
 
