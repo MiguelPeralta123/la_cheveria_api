@@ -5,6 +5,7 @@ import provRoutes from "./routes/prov.routes.js"
 import transporteRoutes from "./routes/transporte.routes.js"
 import bancoRoutes from "./routes/banco.routes.js"
 import tiendaOnlineRoutes from "./routes/tiendaOnline.routes.js"
+import loginRoutes from "./routes/login.routes.js"
 
 
 // Configuracion cors
@@ -28,6 +29,7 @@ app.use(provRoutes)
 app.use(transporteRoutes)
 app.use(bancoRoutes)
 app.use(tiendaOnlineRoutes)
+app.use(loginRoutes)
 
 app.use((req, res, next) => {
     res.status(404).json({
