@@ -5,6 +5,7 @@ import provRoutes from "./routes/prov.routes.js"
 import transporteRoutes from "./routes/transporte.routes.js"
 import bancoRoutes from "./routes/banco.routes.js"
 import tiendaOnlineRoutes from "./routes/tiendaOnline.routes.js"
+import loginRoutes from "./routes/login.routes.js"
 import productoRoutes from "./routes/producto.routes.js"
 
 
@@ -29,7 +30,6 @@ app.use(provRoutes)
 app.use(transporteRoutes)
 app.use(bancoRoutes)
 app.use(tiendaOnlineRoutes)
-app.use(productoRoutes)
 
 app.use((req, res, next) => {
     res.status(404).json({
