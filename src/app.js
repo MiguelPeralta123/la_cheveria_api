@@ -7,7 +7,18 @@ import bancoRoutes from "./routes/banco.routes.js"
 import tiendaOnlineRoutes from "./routes/tiendaOnline.routes.js"
 
 
+// Configuracion cors
+import cors from 'cors';
+
+import { con } from './config.js';
+
+// Esto iba despues de terminado el cors
 const app = express();
+
+app.use(cors(
+  con.application.cors.server
+));
+// Aquí termina
 
 app.use(express.json())
 
