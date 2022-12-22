@@ -4,8 +4,8 @@ import {
   getProd,
   createProd,
   getProdById,
-  /*deleteProdById,
-  updateProdById,*/
+  //deleteProdById,
+  //updateProdById,
 } from "../controllers/producto.controller.js";
 
 const router = Router();

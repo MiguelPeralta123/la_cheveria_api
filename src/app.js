@@ -7,6 +7,7 @@ import bancoRoutes from "./routes/banco.routes.js"
 import tiendaOnlineRoutes from "./routes/tiendaOnline.routes.js"
 import loginRoutes from "./routes/login.routes.js"
 import productoRoutes from "./routes/producto.routes.js"
+import carritoRoutes from "./routes/carrito.routes.js"
 
 
 // Configuracion cors
@@ -32,6 +33,7 @@ app.use(bancoRoutes)
 app.use(tiendaOnlineRoutes)
 app.use(loginRoutes)
 app.use(productoRoutes)
+app.use(carritoRoutes)
 
 app.use((req, res, next) => {
     res.status(404).json({
